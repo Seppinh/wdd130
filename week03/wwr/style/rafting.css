@@ -1,0 +1,88 @@
+
+:root{
+    --primary-color: #0F3B2F;
+    --secondary-color: #1B4F72; 
+    --accent1-color:#FB8500;
+    --accent2-color:#E8E4D9;
+    --heading-font:"Crazy Rafting", "Amazonas", serif;
+    --body-font:Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--secondary-color); 
+    
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}   
+
+h1, h2{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article{
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 750px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+
+}
+
+.hero article img{
+    float: right;
+    width: 125px;
+}
+
+
+
+header img{
+    width: 100px;
+    height: auto;
+
+}
+
+main article img{
+    width: 100px;
+}
+
+
+
+footer img{
+    width: 50px;
+}
+
+body main h1, article{
+    text-align: center;
+}
+
