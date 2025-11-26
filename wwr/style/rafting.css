@@ -1,0 +1,152 @@
+/* ================================
+   PALETA DE COLORES PERSONALIZADA
+==================================*/
+:root{
+    --primary-color1: #0F3D2E;      /* Verde jungla profundo */
+    --secondary-color2: #2A6041;    /* Verde selva más claro */
+    --accent-color1: #C2B280;       /* Arena / madera */
+    --accent-color2: #F2F0E9;       /* Fondo claro */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Reset general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--accent-color2);
+    color: var(--primary-color1);
+}
+
+/* ================================
+   LAYOUT PRINCIPAL
+==================================*/
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ================================
+   HEADER + NAV
+==================================*/
+header{
+    display: flex;                  /* ← Alinea logo + menú como en la imagen */
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+header img{
+    width: 110px;
+}
+
+nav ul{
+    display: flex;                  /* ← Menú horizontal */
+    gap: 20px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-color1);
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--secondary-color2);
+}
+
+/* ================================
+   HERO SECTION
+==================================*/
+.hero{
+    position: relative;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Título sobre la imagen */
+.hero h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(15, 61, 46, 0.75); /* ← primary con transparencia */
+    color: var(--accent-color2);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+/* ================================
+   ARTICLE SOBRE LA IMAGEN
+==================================*/
+.hero article{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 75%;
+    background-color: rgba(0,0,0,0.45); /* caja semitransparente como en la imagen */
+    padding: 16px;
+    color: var(--accent-color2);
+    border-radius: 6px;
+}
+
+.hero article img{
+    float: right;
+    width: 125px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+/* ================================
+   SECCIONES BAJO LA HERO
+==================================*/
+section{
+    margin-top: 30px;
+}
+
+section h2{
+    background-color: var(--primary-color1);
+    color: var(--accent-color2);
+    padding: 12px;
+    text-align: center;
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+section p{
+    margin: 0 16px 16px 16px;
+    color: var(--primary-color1);
+}
+
+/* ================================
+   FOOTER
+==================================*/
+footer{
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: var(--primary-color1);
+}
+
+.socialmedia img{
+    width: 28px;
+    margin: 0 10px;
+}
+
+.socialmedia a{
+    text-decoration: none;
+}
