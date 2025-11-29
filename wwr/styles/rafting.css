@@ -41,7 +41,7 @@ header{
     align-items: center;
     padding: 16px;
     border-bottom: 2px solid var(--primary-color1);
-    background-color: #6F6A55;
+    background-color: var(--secondary-color2);
 }
 
 header img{
@@ -103,6 +103,16 @@ nav a:hover{
     padding: 5px 0;
     border: 1px solid var(--primary-color1);
 }
+
+.hero article{
+    position: absolute;  /* Esta parte la agregue para que corresponder a los requiremientos de page auditool  */
+}
+
+
+.hero article img{
+    float: right;
+}
+
 
 /* Caja inferior como en el mockup */
 .hero-box{
