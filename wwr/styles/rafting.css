@@ -11,15 +11,15 @@
 }
 
 /* Reset general */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;     
 }
 
 body{
     font-family: var(--body-font);
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color1);
     color: var(--primary-color1);
 }
 
@@ -35,30 +35,42 @@ header, main, footer{
    HEADER + NAV
 ==================================*/
 header{
-    display: flex;                  /* ← Alinea logo + menú como en la imagen */
-    justify-content: space-between;
+    display: grid;                /* ← Alinea logo + menú como en la imagen */
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px;
+    border-bottom:2px solid var(--primary-color1);
+
+    
 }
 
 header img{
-    width: 110px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+nav{
+    justify-self: end;
 }
 
 nav ul{
-    display: flex;                  /* ← Menú horizontal */
+    display: flex;                 /* ← Menú horizontal */
     gap: 20px;
     list-style: none;
+    margin: 0;
 }
 
 nav a{
     text-decoration: none;
     color: var(--primary-color1);
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover{
     color: var(--secondary-color2);
+    background-color: var(--secondary-color2);
+    border-radius: 4px;
 }
 
 /* ================================
@@ -66,6 +78,7 @@ nav a:hover{
 ==================================*/
 .hero{
     position: relative;
+    margin-bottom: 20px;
 }
 
 .hero-img{
@@ -78,7 +91,7 @@ nav a:hover{
 .hero h1{
     position: absolute;
     top: 20px;
-    width: 100%;
+    left: 0; right: 0;
     text-align: center;
     padding: 16px;
     background-color: rgba(15, 61, 46, 0.75); /* ← primary con transparencia */
