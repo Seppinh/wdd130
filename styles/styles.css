@@ -1,108 +1,148 @@
+:root{
+    --primary-color: #F7F7F7;
+    --secondary-color: #2F3E46; 
+    --accent-color1: #C2B280;
+    --accent-colo2: #8E9AAF;
+    --heading-font: "Times New ROma", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header */
-body header p {
-    background: #333;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-colo2);
+    color: var(--primary-color);
 }
 
-body header nav{
-    background-color: rosybrown;
-    padding: 0 10px;
-    display: block;
-    width: 160px;
+header, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+
+/*=============================================
+                CARD PROFILE
+===============================================*/
+
+.card-profile{
+    width: 420px;
+    background: var(--accent-color1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.profile{
+    display: flex;
+    gap: 15px;
+}
+
+.text-box h1{
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.text-box p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/*=============================================
+                  PERU CARD 
+===============================================*/
+.country{
+    width: 420px;
+    background: var(--accent-color1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Peru{
+    display: flex;
+    gap: 15px;
+}
+
+.peru-box h1{
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.peru-box p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/*=============================================
+                    IMAGES
+===============================================*/
+
+
+.Image img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.p-image img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*=============================================
+                TEMPLES LINKS
+===============================================*/
+
+
+.temples-links{
+    background: var(--primary-color);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.temples-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.temples-links a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+/*=============================================
+                NAVIGATION
+===============================================*/
+
+
+nav {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
 }
 
 nav a{
-    padding: 20px;
-}
-
-body {
-    max-width: 600px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-}
-
-/* MAIN */
-main {
-    max-width: 600px;
-    margin-top: 20px;
-}
-
-/* Título */
-main h1{
-    max-width: max-content;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* ⭐ NUEVO — Caja que une párrafo + imagen */
-.profile-box {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 20px auto;
-    width: 100%;
-}
-
-/* Texto */
-.profile-box p{
-    background-color: antiquewhite;
-    padding: 10px;
-    border: 1px solid #adadad;
-    flex: 1;
-}
-
-/* Imagen personal */
-.profile-box img{
-    width: 200px;
-    height: auto;
-    display: block;
-    box-shadow: 0 -20px 100px #fff;
-    border-radius: 4px;
-}
-
-/* ASIDE */
-main aside img {
-    width: 200px;
-    height: auto;
-    display: block;
-    box-shadow: 0 -20px 100px #fff;
-    margin: auto;
-}
-
-main aside h2 {
-    text-align: center;
-    width: 100%;
-}
-
-main aside p{
-    text-align: center;
-    background-color: #333;
-    color: antiquewhite;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-/* Caja reutilizable */
-.box {
-    margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+    color: var(--accent-color1);
 }
