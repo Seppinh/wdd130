@@ -20,7 +20,7 @@ body {
 }
 
 header, footer{
-    max-width: 840px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -35,7 +35,6 @@ header, footer{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .profile{
@@ -64,8 +63,6 @@ header, footer{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-
-    
 }
 
 .Peru{
@@ -144,5 +141,45 @@ nav {
 }
 
 nav a{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--accent-color1);
+}
+
+
+/*=============================================
+                    GRID
+===============================================*/
+
+
+/*.grid {
+  display: grid;
+  align-items: center;
+}*/
+
+
+/*=============================================
+                    MAIN
+===============================================*/
+
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+ 
+
+/*=============================================
+                    ASIDE
+===============================================*/
+
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
