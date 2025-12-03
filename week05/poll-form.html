@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../wwr/about.html">Rafting website</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Things I could improve on my page</h1>
+        <p>I would like to know what you recommend to improve my programming skills based on what you saw on my previous
+            pages.</p>
+    </main>
+
+    <form action="https://formspree.io/f/xzzngqln" method="post">
+
+        <label for="fullname">fullname:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="useremail">Email:</label>
+        <input type="email" id="useremail" name="useremail" required>
+
+        <label for="message">Your Ideas For Improvement:</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+
+        <label for="quantity">Gives a Score From 1-10</label>
+        <select name="quantity" id="quantity">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="3">Four</option>
+            <option value="3">Five</option>
+            <option value="3">Six</option>
+            <option value="3">Seven</option>
+            <option value="3">Eight</option>
+            <option value="3">Nine</option>
+            <option value="3">Ten</option>
+        </select>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <footer>Thanks for the help and recommendation.</footer>
+</body>
+
+</html>
