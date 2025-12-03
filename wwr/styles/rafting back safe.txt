@@ -1,158 +1,186 @@
-/* ================================
-   PALETA DE COLORES PERSONALIZADA
-==================================*/
 :root{
-    --primary-color1: #0F3D2E;      /* Verde jungla profundo */
-    --secondary-color2: #2A6041;    /* Verde selva más claro */
-    --accent-color1: #C2B280;       /* Arena / madera */
-    --accent-color2: #F2F0E9;       /* Fondo claro */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --primary-color: #F7F7F7;
+    --secondary-color: #2F3E46; 
+    --accent-color1: #C2B280;
+    --accent-colo2: #8E9AAF;
+    --heading-font: "Times New ROma", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Reset general */
-* {
-    margin: 1;
-    padding: 1;
-    box-sizing: border-box;     
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--body-font);
-    background-color: var(--accent-color1);
-    color: var(--primary-color1);
+    background-color: var(--accent-colo2);
+    color: var(--primary-color);
 }
 
-/* ================================
-   LAYOUT PRINCIPAL
-==================================*/
-header, main, footer{
-    width: 840px;
+header, footer{
+    max-width: 850px;
     margin: 0 auto;
 }
 
-/* ================================
-   HEADER + NAV
-==================================*/
-header{
-    display: grid;                /* ← Alinea logo + menú como en la imagen */
-    grid-template-columns: 120px 1fr 1fr;
-    grid-row: 20px 20px 20px;
-    align-items: center;
-    padding: 16px 0;
+
+
+/*=============================================
+                CARD PROFILE
+===============================================*/
+
+.card-profile{
+    width: 420px;
+    background: var(--accent-color1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-header img{
-    width: 110px;
-}
-
-nav{
+/*.profile{
     display: flex;
-    justify-content: center;
+    gap: 15px;
+}*/
+
+.text-box h1{
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--secondary-color);
 }
 
-nav ul{
-    display: flex;                 /* ← Menú horizontal */
-    gap: 20px;
-    list-style: none;
+.text-box p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/*=============================================
+                  PERU CARD 
+===============================================*/
+.country{
+    width: 420px;
+    background: var(--accent-color1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/*.Peru{
+    display: flex;
+    gap: 15px;
+}*/
+
+.peru-box h1{
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.peru-box p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/*=============================================
+                    IMAGES
+===============================================*/
+
+
+.Image img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.p-image img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*=============================================
+                TEMPLES LINKS
+===============================================*/
+
+
+.temples-links{
+    background: var(--primary-color);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.temples-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.temples-links a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+/*=============================================
+                NAVIGATION
+===============================================*/
+
+
+nav {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
 }
 
 nav a{
-    text-decoration: none;
-    color: var(--primary-color1);
-    font-weight: bold;
-}
-
-nav a:hover{
-    color: var(--secondary-color2);
-}
-
-/* ================================
-   HERO SECTION
-==================================*/
-.hero{
-    position: relative;
-}
-
-.hero-img{
-    width: 100%;
-    height: auto;
     display: block;
-}
-
-/* Título sobre la imagen */
-.hero h1{
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    padding: 16px;
-    background-color: rgba(15, 61, 46, 0.75); /* ← primary con transparencia */
-    color: var(--accent-color2);
-    font-family: var(--heading-font);
-    font-size: 2rem;
-}
-
-/* ================================
-   ARTICLE SOBRE LA IMAGEN
-==================================*/
-.hero article{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 75%;
-    background-color: rgba(0,0,0,0.45); /* caja semitransparente como en la imagen */
-    padding: 16px;
-    color: var(--accent-color2);
-    border-radius: 6px;
-}
-
-.hero article img{
-    float: right;
-    width: 125px;
-    border-radius: 4px;
-    margin-left: 12px;
-}
-
-/* ================================
-   SECCIONES BAJO LA HERO
-==================================*/
-section{
-    margin-top: 30px;
-}
-
-section h2{
-    background-color: var(--primary-color1);
-    color: var(--accent-color2);
-    padding: 12px;
-    text-align: center;
-    font-family: var(--heading-font);
-    margin-bottom: 10px;
-}
-
-section p{
-    margin: 0 16px 16px 16px;
-    color: var(--primary-color1);
-}
-
-/* ================================
-   FOOTER
-==================================*/
-footer{
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-footer p{
-    color: var(--primary-color1);
-}
-
-.socialmedia img{
-    width: 28px;
-    margin: 0 10px;
-}
-
-.socialmedia a{
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color1);
+}
+
+
+/*=============================================
+                    GRID
+===============================================*/
+
+
+/*.grid {
+  display: grid;
+  align-items: center;
+}*/
+
+
+/*=============================================
+                    MAIN
+===============================================*/
+
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+ 
+
+/*=============================================
+                    ASIDE
+===============================================*/
+
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }

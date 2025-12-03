@@ -1,138 +1,34 @@
 :root{
+    /* PALETA DE COLORES */
     --primary-color: #F7F7F7;
     --secondary-color: #2F3E46; 
     --accent-color1: #C2B280;
-    --accent-colo2: #8E9AAF;
-    --heading-font: "Times New ROma", "Georgia", serif;
+    --accent-color2: #8E9AAF;
+
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* GENERAL */
 body {
     font-family: var(--body-font);
-    background-color: var(--accent-colo2);
-    color: var(--primary-color);
-}
-
-header, footer{
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-
-/*=============================================
-                CARD PROFILE
-===============================================*/
-
-.card-profile{
-    width: 420px;
-    background: var(--accent-color1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-.profile{
-    display: flex;
-    gap: 15px;
-}
-
-.text-box h1{
-    margin-top: 0;
-    font-size: 20px;
+    background-color: var(--accent-color2);
     color: var(--secondary-color);
 }
 
-.text-box p{
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-
-/*=============================================
-                  PERU CARD 
+/* ============================================
+                   NAVIGATION
 ===============================================*/
-.country{
-    width: 420px;
-    background: var(--accent-color1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-.Peru{
-    display: flex;
-    gap: 15px;
-}
-
-.peru-box h1{
-    margin-top: 0;
-    font-size: 20px;
-    color: var(--secondary-color);
-}
-
-.peru-box p{
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-/*=============================================
-                    IMAGES
-===============================================*/
-
-
-.Image img{
-    width: 120px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.p-image img{
-    width: 120px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/*=============================================
-                TEMPLES LINKS
-===============================================*/
-
-
-.temples-links{
-    background: var(--primary-color);
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.temples-links ul{
-    margin: 0;
-    padding: 0;
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.temples-links a{
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-
-/*=============================================
-                NAVIGATION
-===============================================*/
-
 
 nav {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
@@ -141,45 +37,94 @@ nav {
 }
 
 nav a{
-    display: block;
-    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--accent-color1);
 }
 
-
-/*=============================================
-                    GRID
+/* ============================================
+                     FLEX
 ===============================================*/
 
 
-/*.grid {
-  display: grid;
-  align-items: center;
-}*/
-
-
-/*=============================================
-                    MAIN
-===============================================*/
-
-
-main {
-  grid-column: 2/3;
-  margin: 1rem;
+/*clase fles utilizable para todo el codigo*/
+.flex {
+    display: flex;
+    gap: 15px;
 }
- 
 
-/*=============================================
-                    ASIDE
+/* ============================================
+                    LAYOUTS
 ===============================================*/
 
+/*contenedor principal de las tarjetas*/
+/*permite tener las dos tarjetas lado a lado*/
+.layout {
+    max-width: 950px;
+    margin: 20px auto;
+    display: flex;          /* ⬅️ PONE LAS TARJETAS LADO A LADO */
+    gap: 20px;              /* ⬅️ SEPARACIÓN ENTRE ELLAS */
+}
 
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+/* ============================================
+   TARJETAS (ESTILO UNIFICADO)
+   🔥 ELIMINÉ REPETICIÓN Y USÉ CLASES LIMPIAS
+===============================================*/
+
+.card-profile,
+.country {
+    width: 450px;
+    background: var(--accent-color1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* ❌ ELIMINADO position:absolute QUE ROMPÍA EL LAYOUT */
+
+/* ============================================
+   TEXTOS
+===============================================*/
+
+.text-box h1,
+.peru-box h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-box p,
+.peru-box p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* ============================================
+   IMÁGENES (UNIFICADO)
+===============================================*/
+
+.Image img,
+.p-image img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ============================================
+   TEMPLE LINKS (RE-CUADRO)
+===============================================*/
+
+.temples-links{
+    background: var(--primary-color);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--secondary-color);
+}
+
+.temples-links ul{
+    list-style: disc;
+    padding-left: 20px;
 }
