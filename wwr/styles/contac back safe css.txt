@@ -10,17 +10,28 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Reset */
+/* Regla General (Reset) */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;     
+    box-sizing: border-box;
 }
 
 body{
     font-family: var(--body-font);
     background-color: var(--accent-color1);
     color: var(--primary-color1);
+}
+
+/* ============================================
+                     FLEX
+===============================================*/
+
+
+/*clase fles utilizable para todo el codigo*/
+.flex {
+    display: flex;
+    gap: 15px;
 }
 
 /* ================================
@@ -32,6 +43,33 @@ header, main, footer{
     background-color: var(--accent-color1);
 }
 
+.layout{
+    max-width: 950px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.Direction{
+    text-align: center;
+}
+
+
+/* ============================================
+   TARJETAS (ESTILO UNIFICADO)
+   🔥 ELIMINÉ REPETICIÓN Y USÉ CLASES LIMPIAS
+===============================================*/
+
+.map,
+.form {
+    width: 450px;
+    background: var(--accent-color2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+
 /* ================================
    HEADER
 ==================================*/
@@ -41,7 +79,7 @@ header{
     align-items: center;
     padding: 16px;
     border-bottom: 2px solid var(--primary-color1);
-    background-color: #6F6A55;
+    background-color: var(--accent-color2);
 }
 
 header img{
@@ -103,6 +141,16 @@ nav a:hover{
     padding: 5px 0;
     border: 1px solid var(--primary-color1);
 }
+
+.hero article{
+    position: absolute;  /* Esta parte la agregue para que corresponder a los requiremientos de page auditool  */
+}
+
+
+.hero article img{
+    float: right;
+}
+
 
 /* Caja inferior como en el mockup */
 .hero-box{
