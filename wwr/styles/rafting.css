@@ -23,6 +23,17 @@ body{
     color: var(--primary-color1);
 }
 
+/* ============================================
+                     FLEX
+===============================================*/
+
+
+/*clase fles utilizable para todo el codigo*/
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
 /* ================================
    LAYOUT PRINCIPAL
 ==================================*/
@@ -31,6 +42,33 @@ header, main, footer{
     margin: 0 auto;
     background-color: var(--accent-color1);
 }
+
+.layout{
+    max-width: 950px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.Direction{
+    text-align: center;
+}
+
+
+/* ============================================
+   TARJETAS (ESTILO UNIFICADO)
+   🔥 ELIMINÉ REPETICIÓN Y USÉ CLASES LIMPIAS
+===============================================*/
+
+.map,
+.form {
+    width: 450px;
+    background: var(--accent-color2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
 
 /* ================================
    HEADER
