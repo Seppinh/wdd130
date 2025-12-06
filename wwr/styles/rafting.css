@@ -69,6 +69,22 @@ header, main, footer{
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
+fieldset{
+    border-radius: 8px;
+}
+
+.Ideas{
+    padding: 1em;
+    display: grid;
+}
+
+.Score{
+    padding: 1em;
+}
+
+.checkbox ,.radio{
+    padding: 1em;
+}
 
 /* ================================
    HEADER
@@ -250,4 +266,31 @@ footer p{
 .socialmedia img{
     width: 30px;
     margin-left: 10px;
+}
+
+/*========================================
+                    TABLA   
+  ========================================*/
+
+table{
+    border-collapse: collapse;
+    border: 2px solid var(--primary-color1);
+    letter-spacing: 1px;
+}
+
+th, td {
+    border: 1px solid var(--secondary-color2);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead tr, tfoot tr {
+    background-color: var(--secondary-color2);
+    color: var(--accent-color2);
+    font-weight: 700;
+}
+
+ h1 ,.information{
+    margin: 0 auto;
+    width: 80%;
 }

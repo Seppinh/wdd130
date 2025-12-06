@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppe Chavez | WDD 130 </title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description"
+        content="describe your home page using keybords like your name, the course, the purpose of the page ">
+    <meta name="Giuseppe" content="my creations">
+    <meta name="Giuseppe Chavez">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="about.html">Rafting Website</a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a>
+        </nav>
+    </header>
+    <main class="layout">
+
+        <div class="card-profile">
+
+            <div class="profile">
+
+                <article class="text-box">
+                    <h1>Giuseppe Chavez | WDD 130</h1>
+                    <p>Hello, I'm Giuseppe, and this will be my website and soon my portfolio and job application. I'm
+                        really
+                        excited to
+                        study
+                        programming and will give it my all. I was born in Iquitos, Peru, but I live in the capital
+                        city.
+                        I'm
+                        trying
+                        to
+                        better
+                        understand this cyber world through programming, so I'd appreciate any advice on skills I can
+                        develop.
+                        because I
+                        want to
+                        be a key player in this field..</p>
+                </article>
+
+                <div class="Image">
+                    <img src="images/giuzeppe-americo.webp" alt="profile">
+                </div>
+
+            </div>
+
+            <div>
+                <ul class="temples-links">
+                    <li><a href="https://www.churchofjesuschrist.org/temples/details/lima-peru-temple?lang=spa">Temple
+                            of
+                            the
+                            mill</a></li>
+                    <li><a
+                            href="https://www.churchofjesuschrist.org/temples/details/lima-peru-los-olivos-temple?lang=spa">Temple
+                            of the Olive Trees</a>
+                    </li>
+                    <li><a href="https://www.churchofjesuschrist.org/temples/details/arequipa-peru-temple?lang=spa">Arequipa
+                            temple</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country">
+
+            <div class="Peru">
+
+                <aside class="peru-box">
+                    <h2>
+                        Perú
+                    </h2>
+
+                    <p>Lima is a city in Peru where you can see a mix of the country's cultures.</p>
+                </aside>
+            </div>
+
+            <div class="p-image">
+
+                <img src="images/lima-photo.webp">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thanks you for visiting my page :b ©</p>
+    </footer>
+</body>
+
+</html>
